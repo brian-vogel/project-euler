@@ -4,12 +4,30 @@
 import { sieve_of_eratosthenes } from './helpers/sieve_of_eratosthenes'
 
 export function problem_003() {
-  const n = 600851475143;
-  const primes = sieve_of_eratosthenes( Math.sqrt(n) );
+  let n = 600851475143;
+  let primes = [];
+  let i = 1;
 
-  for(let i = primes.length - 1; i > 0; i--) {
-    if(n % primes[i] === 0) {
-      return primes[i];
+  while( n > i) {
+    i++;
+    if( n % i === 0 ) {
+      primes.push(i);
+      n /= i;
+      i--;
     }
   }
+
+  return primes[primes.length -1];
 }
+
+// Original
+// export function problem_003() {
+//   const n = 600851475143;
+//   const primes = sieve_of_eratosthenes( Math.sqrt(n) );
+
+//   for(let i = primes.length - 1; i > 0; i--) {
+//     if(n % primes[i] === 0) {
+//       return primes[i];
+//     }
+//   }
+// }
