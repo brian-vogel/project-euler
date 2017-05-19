@@ -1,5 +1,5 @@
 {
-  "name": "math-tokenizer",
+  "name": "project-euler",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/brian-vogel/math-tokenizer.git"
+    "url": "git+https://github.com/brian-vogel/project-euler.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/brian-vogel/math-tokenizer/issues"
+    "url": "https://github.com/brian-vogel/project-euler/issues"
   },
-  "homepage": "https://github.com/brian-vogel/math-tokenizer#readme",
+  "homepage": "https://github.com/brian-vogel/project-euler#readme",
   "devDependencies": {
     "@types/node": "^7.0.18"
   }
