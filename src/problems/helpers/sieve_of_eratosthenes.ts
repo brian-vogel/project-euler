@@ -15,7 +15,11 @@ export function sieve_of_eratosthenes(n: number): number[] {
     }
   }
 
-  return isPrimeNumbers.map((isPrime: boolean, index: number, numbers: boolean[]) => {
-    return isPrime ? index : undefined;
-  }).filter((primeNumber) => primeNumber);
+  var ret = [];
+  isPrimeNumbers.forEach(function (num, index) {
+    if (num) {
+      ret.push(index);
+    }
+  });
+  return ret;
 }

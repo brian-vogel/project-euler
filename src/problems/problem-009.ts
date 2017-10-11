@@ -7,12 +7,13 @@
 // Find the product abc.
 
 export function problem_009() {
-  for(let a = 0; a < 1000; a++ ){
-    for(let b = a + 1; b < 1000; b++) {
-      for(let c = b + 1; c < 1000; c++) {
-        if( (a*a + b*b === c*c)  && (a + b + c === 1000) ){
-          return a*b*c;
-        }
+  const target = 1000;
+
+  for(let a = 1; a < target; a++) {
+    for(let b = a; b < target; b++) {
+      let c = target - a  -b;
+      if(a*a + b*b === c*c) {
+        return a*b*c;
       }
     }
   }

@@ -4,35 +4,19 @@
 
 // By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.
 
-// Alternative
-// export function problem_002() {
-//   let fibb = [0, 1];
-
-//   for (let i = 2; fibb[fibb.length - 1] < 4000000; i++) {
-//     fibb.push(fibb[i - 1] + fibb[i - 2]);
-//   }
-
-//   return fibb.filter( x => x % 2 === 0)
-//     .reduce((a, b) => a + b);
-// }
-
-// Original
 export function problem_002() {
-  let sum = 0;
-
+  const target = 4000000;
+  
   let fibb_last = 0;
   let fibb_next = 1;
-
-  while(fibb_next < 4000000) {
-    let temp = fibb_last;
-
-    fibb_last = fibb_next;
-    fibb_next = temp + fibb_last;
+  
+  let sum = 0;
+  while(fibb_next < target) {
+    [fibb_last, fibb_next] = [fibb_next, fibb_last + fibb_next];
 
     if(fibb_last % 2 === 0) {
       sum += fibb_last;
     }
   }
-
   return sum;
 }

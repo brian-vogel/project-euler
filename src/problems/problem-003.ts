@@ -19,15 +19,3 @@ export function problem_003() {
 
   return primes[primes.length -1];
 }
-
-// Original
-// export function problem_003() {
-//   const n = 600851475143;
-//   const primes = sieve_of_eratosthenes( Math.sqrt(n) );
-
-//   for(let i = primes.length - 1; i > 0; i--) {
-//     if(n % primes[i] === 0) {
-//       return primes[i];
-//     }
-//   }
-// }

@@ -10,16 +10,3 @@ export function problem_001(): number {
     .filter( (x) => ((x % 3 === 0) || (x % 5 === 0)))
     .reduce( (a, b) => a + b, 0);
 }
-
-// Original
-// export function problem_001(): number {
-//   let sum = 0;
-
-//   for(let i = 0; i < 1000; i++) {
-//     if( (i % 3 === 0) || (i % 5 === 0)) {
-//       sum += i;
-//     }
-//   }
-
-//   return sum;
-// }
