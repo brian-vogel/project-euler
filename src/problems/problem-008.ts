@@ -27,10 +27,10 @@ export function problem_008() {
   const len = 13;
   let maxProduct = 0;
   let product = 1;
-  for(let i = 0; i < str.length - len; i++) {
+  for (let i = 0; i < str.length - len; i++) {
     product = 1;
-    str.substring(i, i + len).split('').forEach((num: string) => {product *= parseInt(num)});
-    if(product > maxProduct) {
+    str.substring(i, i + len).split('').forEach((num: string) => { product *= parseInt(num) });
+    if (product > maxProduct) {
       maxProduct = product;
     }
   }
@@ -56,4 +56,4 @@ let str = `73167176531330624919225119674426574742355349194934
 07198403850962455444362981230987879927244284909188
 84580156166097919133875499200524063689912560717606
 05886116467109405077541002256983155200055935729725
-71636269561882670428252483600823257530420752963450`.replace(/\n/gm, "")
+71636269561882670428252483600823257530420752963450`.replace(/\n/gm, "");

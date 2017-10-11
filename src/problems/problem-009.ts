@@ -9,11 +9,11 @@
 export function problem_009() {
   const target = 1000;
 
-  for(let a = 1; a < target; a++) {
-    for(let b = a; b < target; b++) {
-      let c = target - a  -b;
-      if(a*a + b*b === c*c) {
-        return a*b*c;
+  for (let a = 1; a < target; a++) {
+    for (let b = a; b < target; b++) {
+      let c = target - a - b;
+      if (a * a + b * b === c * c) {
+        return a * b * c;
       }
     }
   }

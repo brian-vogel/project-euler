@@ -6,15 +6,15 @@
 
 export function problem_002() {
   const target = 4000000;
-  
+
   let fibb_last = 0;
   let fibb_next = 1;
-  
+
   let sum = 0;
-  while(fibb_next < target) {
+  while (fibb_next < target) {
     [fibb_last, fibb_next] = [fibb_next, fibb_last + fibb_next];
 
-    if(fibb_last % 2 === 0) {
+    if (fibb_last % 2 === 0) {
       sum += fibb_last;
     }
   }

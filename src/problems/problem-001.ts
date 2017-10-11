@@ -7,6 +7,6 @@ export function problem_001(): number {
   return Array(1000)
     .fill(0)
     .map((x, i) => i)
-    .filter( (x) => ((x % 3 === 0) || (x % 5 === 0)))
-    .reduce( (a, b) => a + b, 0);
+    .filter((x) => ((x % 3 === 0) || (x % 5 === 0)))
+    .reduce((a, b) => a + b, 0);
 }

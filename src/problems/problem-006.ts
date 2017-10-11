@@ -12,7 +12,7 @@ export function problem_006() {
   let sum_of_squares = 0;
   let sum = 0;
 
-  for(let i = 1; i <= 100; i++) {
+  for (let i = 1; i <= 100; i++) {
     sum_of_squares += i * i;
     sum += i;
   }

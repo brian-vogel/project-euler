@@ -8,14 +8,14 @@ export function problem_003() {
   let primes = [];
   let i = 1;
 
-  while( n > i) {
+  while (n > i) {
     i++;
-    if( n % i === 0 ) {
+    if (n % i === 0) {
       primes.push(i);
       n /= i;
       i--;
     }
   }
 
-  return primes[primes.length -1];
+  return primes[primes.length - 1];
 }
