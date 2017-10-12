@@ -26,18 +26,13 @@
 export function problem_008() {
   const len = 13;
   let maxProduct = 0;
-  let product = 1;
   for (let i = 0; i < str.length - len; i++) {
-    product = 1;
-    str.substring(i, i + len).split('').forEach((num: string) => { product *= parseInt(num) });
-    if (product > maxProduct) {
-      maxProduct = product;
-    }
+    maxProduct = Math.max(maxProduct, str.substring(i, i + len).split('').reduce((prev, curr) => prev * parseInt(curr) , 1));
   }
   return maxProduct;
 }
 
-let str = `73167176531330624919225119674426574742355349194934
+const str = `73167176531330624919225119674426574742355349194934
 96983520312774506326239578318016984801869478851843
 85861560789112949495459501737958331952853208805511
 12540698747158523863050715693290963295227443043557
