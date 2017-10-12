@@ -8,6 +8,7 @@ import { problem_007 } from './problem-007';
 import { problem_008 } from './problem-008';
 import { problem_009 } from './problem-009';
 import { problem_010 } from './problem-010';
+import { problem_011 } from './problem-011';
 
 export {
   problem_001,
@@ -20,4 +21,5 @@ export {
   problem_008,
   problem_009,
   problem_010,
+  problem_011,
 }
