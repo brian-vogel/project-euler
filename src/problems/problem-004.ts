@@ -7,7 +7,7 @@ export function problem_004() {
 
   for (let i = 100; i < 1000; i++) {
     for (let j = i + 1; j < 1000; j++) {
-      let possiblePalindrome = i * j;
+      const possiblePalindrome = i * j;
       if ((possiblePalindrome > largestPalindrome) &&
         (possiblePalindrome.toString() === possiblePalindrome.toString().split('').reverse().join(''))) {
         largestPalindrome = possiblePalindrome;
