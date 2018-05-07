@@ -22,7 +22,7 @@ export function problem_012(): number {
   while(true) {
     triangle += i;
     i++;
-    let divisors = find_divisors(triangle);
+    const divisors = find_divisors(triangle);
     if(divisors.length > 500) {
       return triangle;
     }
